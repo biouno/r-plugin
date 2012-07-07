@@ -10,6 +10,58 @@
   <artifactId>r</artifactId>
   <version>0.1-SNAPSHOT</version>
   <packaging>hpi</packaging>
+  
+  <name>R Plug-in</name>
+  <url>https://wiki.jenkins-ci.org/display/JENKINS/R+Plugin</url>
+  <description>A simple plug-in to invoke R interpreter and execute an R script. </description>
+
+  <ciManagement>
+    <system>BuildHive</system>
+    <url>https://buildhive.cloudbees.com/job/jenkinsci/job/r-plugin/</url>  
+  </ciManagement>
+
+  <developers>
+    <developer>
+      <email>brunodepaulak@yahoo.com.br</email>
+      <id>kinow</id>
+      <name>Bruno P. Kinoshita</name>
+      <organization>TupiLabs</organization>
+      <organizationUrl>http://www.tupilabs.com</organizationUrl>
+      <timezone>-3</timezone>
+      <url>http://www.kinoshita.eti.br</url>
+      <roles>
+        <role>developer</role>
+      </roles>
+    </developer>
+  </developers>
+  
+  <organization>
+    <name>TupiLabs</name>
+    <url>http://www.tupilabs.com</url>
+  </organization>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+  <licenses>
+    <license>
+      <name>MIT</name>
+      <url>http://www.opensource.org/licenses/mit-license.php</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  
+  <scm>
+    <connection>scm:git:git://github.com/jenkinsci/r-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:jenkinsci/r-plugin.git</developerConnection>
+    <url>http://github.com/jenkinsci/r-plugin</url>
+  </scm>
+  
+  <issueManagement>
+    <system>JIRA</system>
+    <!-- url>http://issues.jenkins-ci.org/browse/JENKINS/component/${id}</url -->
+  </issueManagement>
 
   <!-- get every artifact through repo.jenkins-ci.org, which proxies all the artifacts that we need -->
   <repositories>
@@ -25,6 +77,7 @@
       <url>http://repo.jenkins-ci.org/public/</url>
     </pluginRepository>
   </pluginRepositories>
+  
   <build>
   	<pluginManagement>
   		<plugins>
@@ -159,4 +212,5 @@
   		</plugins>
   	</pluginManagement>
   </build>
+  
 </project>
