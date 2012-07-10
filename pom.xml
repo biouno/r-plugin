@@ -59,7 +59,7 @@
   </scm>
   
   <issueManagement>
-    <system>JIRA</system>
+    <!-- system>JIRA</system -->
     <!-- url>http://issues.jenkins-ci.org/browse/JENKINS/component/${id}</url -->
   </issueManagement>
 
