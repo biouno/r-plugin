@@ -34,9 +34,9 @@ import hudson.tasks.CommandInterpreter;
 /**
  * Invokes the Rscript interpreter and executes the R script entered on the 
  * Jenkins build configuration.
- * 
+ *
  * It is expected that the Rscript interpreter is available on the system PATH.
- * 
+ *
  * @author Bruno P. Kinoshita - http://www.kinoshita.eti.br
  * @since 0.1
  */
