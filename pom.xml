@@ -8,7 +8,7 @@
 
   <groupId>org.biouno.r</groupId>
   <artifactId>r</artifactId>
-  <version>0.3</version>
+  <version>0.4-SNAPSHOT</version>
   <packaging>hpi</packaging>
   
   <name>R Plugin</name>
@@ -56,7 +56,7 @@
     <connection>scm:git:git://github.com/jenkinsci/r-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/r-plugin.git</developerConnection>
     <url>http://github.com/jenkinsci/r-plugin</url>
-    <tag>r-0.3</tag>
+    <tag>HEAD</tag>
   </scm>
   
   <issueManagement>
