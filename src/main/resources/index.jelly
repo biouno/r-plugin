@@ -1,3 +1,4 @@
+<?jelly escape-by-default='true'?>
 <div>
   Adds the ability to execute R scripts as build steps.
 </div>
