@@ -3,21 +3,21 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>1.580.1</version><!-- which version of Jenkins is this plugin built against? -->
+    <version>2.11</version><!-- which version of Jenkins is this plugin built against? -->
   </parent>
 
   <groupId>org.biouno.r</groupId>
   <artifactId>r</artifactId>
   <version>0.4-SNAPSHOT</version>
   <packaging>hpi</packaging>
-  
+
   <name>R Plugin</name>
   <url>https://wiki.jenkins-ci.org/display/JENKINS/R+Plugin</url>
   <description>A simple plug-in to invoke R interpreter and execute an R script. </description>
 
   <ciManagement>
     <system>BuildHive</system>
-    <url>https://buildhive.cloudbees.com/job/jenkinsci/job/r-plugin/</url>  
+    <url>https://buildhive.cloudbees.com/job/jenkinsci/job/r-plugin/</url>
   </ciManagement>
 
   <developers>
@@ -34,16 +34,17 @@
       </roles>
     </developer>
   </developers>
-  
+
   <organization>
     <name>TupiLabs</name>
     <url>http://www.tupilabs.com</url>
   </organization>
-  
+
   <properties>
+    <jenkins.version>1.642.3</jenkins.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-  
+
   <licenses>
     <license>
       <name>MIT</name>
@@ -51,14 +52,14 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
-  
+
   <scm>
     <connection>scm:git:git://github.com/jenkinsci/r-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/r-plugin.git</developerConnection>
     <url>http://github.com/jenkinsci/r-plugin</url>
     <tag>HEAD</tag>
   </scm>
-  
+
   <issueManagement>
     <!-- system>JIRA</system -->
     <!-- url>http://issues.jenkins-ci.org/browse/JENKINS/component/${id}</url -->
@@ -78,7 +79,7 @@
       <url>http://repo.jenkins-ci.org/public/</url>
     </pluginRepository>
   </pluginRepositories>
-  
+
   <build>
   	<pluginManagement>
   		<plugins>
@@ -213,5 +214,12 @@
   		</plugins>
   	</pluginManagement>
   </build>
-  
+
+  <dependencies>
+      <dependency>
+          <groupId>org.jenkins-ci.plugins.workflow</groupId>
+          <artifactId>workflow-durable-task-step</artifactId>
+          <version>2.6</version>
+      </dependency>
+  </dependencies>
 </project>
