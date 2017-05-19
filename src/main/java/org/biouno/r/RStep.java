@@ -79,7 +79,7 @@ public class RStep extends DurableTaskStep {
 
         private static String getShellScriptExecutingRScript(FilePath ws, String command) {
             try {
-                FilePath rScript = ws.createTextTempFile(FILE_PREFIX, FILE_EXTENSION, command, false);
+                FilePath rScript = ws.createTextTempFile(FILE_PREFIX, FILE_EXTENSION, command, true);
                 return R_EXECUTABLE + " " + rScript.getRemote();
             } catch (IOException e) {
                 throw new IllegalStateException(Messages.R_FileCreationError(), e);
