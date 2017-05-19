@@ -59,6 +59,7 @@ public class RStep extends DurableTaskStep {
     static final class RScript extends DurableTask {
 
         private String command;
+        private boolean captureOutput = false;
 
         public RScript(String command) {
             this.command = command;
@@ -69,6 +70,10 @@ public class RStep extends DurableTaskStep {
                 throws IOException, InterruptedException {
             String shellScript = getShellScriptExecutingRScript(workspace, command);
             BourneShellScript bourneShellScript = new BourneShellScript(shellScript);
+
+            if (captureOutput) {
+                bourneShellScript.captureOutput();
+            }
             return bourneShellScript.launch(env, workspace, launcher, listener);
         }
 
@@ -81,6 +86,11 @@ public class RStep extends DurableTaskStep {
             } catch (InterruptedException e) {
                 throw new IllegalStateException(Messages.R_FileCreationError(), e);
             }
+        }
+
+        @Override
+        public void captureOutput() throws UnsupportedOperationException {
+            captureOutput = true;
         }
     }
 }
