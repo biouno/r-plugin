@@ -15,6 +15,9 @@ import java.io.IOException;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
+/**
+ * Step for workflow/pipeline compatibility.
+ */
 public class RStep extends DurableTaskStep {
 
     private static final String R_EXECUTABLE = "Rscript";
