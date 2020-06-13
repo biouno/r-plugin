@@ -13,7 +13,7 @@
   <packaging>hpi</packaging>
 
   <name>R Plugin</name>
-  <url>https://wiki.jenkins-ci.org/display/JENKINS/R+Plugin</url>
+  <url>https://github.com/jenkinsci/r-plugin</url>
   <description>A simple plug-in to invoke R interpreter and execute an R script. </description>
 
   <issueManagement>
@@ -33,9 +33,9 @@
       <id>kinow</id>
       <name>Bruno P. Kinoshita</name>
       <organization>TupiLabs</organization>
-      <organizationUrl>http://www.tupilabs.com</organizationUrl>
+      <organizationUrl>https://tupilabs.com</organizationUrl>
       <timezone>-3</timezone>
-      <url>http://www.kinoshita.eti.br</url>
+      <url>https://kinoshita.eti.br</url>
       <roles>
         <role>developer</role>
       </roles>
@@ -44,7 +44,7 @@
 
   <organization>
     <name>TupiLabs</name>
-    <url>http://www.tupilabs.com</url>
+    <url>https://tupilabs.com</url>
   </organization>
 
   <licenses>

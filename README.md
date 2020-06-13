@@ -1,3 +1,7 @@
+[![Jenkins Plugin](https://img.shields.io/jenkins/plugin/v/r.svg)](https://plugins.jenkins.io/r)
+[![GitHub release](https://img.shields.io/github/release/jenkinsci/r-plugin.svg?label=changelog)](https://github.com/jenkinsci/r-plugin/releases/latest)
+[![Jenkins Plugin Installs](https://img.shields.io/jenkins/plugin/i/r.svg?color=blue)](https://plugins.jenkins.io/r)
+
 A simple plug-in to invoke [R](http://www.r-project.org/) interpreter
 and execute an R script.
 
