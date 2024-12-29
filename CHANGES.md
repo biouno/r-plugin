@@ -1,0 +1,6 @@
+# R plug-in changelog
+
+## Version 0.7 (??/??/????)
+
+- Require Jenkins 2.542.4
+
