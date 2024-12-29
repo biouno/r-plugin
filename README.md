@@ -35,45 +35,6 @@ Additional instructions can be found on the [BioUno project site](https://biouno
 
 For commercial support, please get contact us via [@tupilabs](https://twitter.com/tupilabs)
 
-## Change Log
-
-### Release 0.6 (June, 14, 2020)
-
-- [JENKINS-62677](https://issues.jenkins-ci.org/browse/JENKINS-62677):
-move docs to GitHub
-- [JENKINS-62676](https://issues.jenkins-ci.org/browse/JENKINS-62676):
-update Jenkins parent and pom/build
-
-### Release 0.5 (May, 20, 2017)
-
-- [pull request #5](https://github.com/jenkinsci/r-plugin/pull/5):
-Implement captureOutput()
-- [pull request #6](https://github.com/jenkinsci/r-plugin/pull/6):
-[WIP] Create R script file in workspace  
-
-### Release 0.4 (Jan, 13, 2017)
-
-- [pull request #1](https://github.com/jenkinsci/r-plugin/pull/1):
-Make plugin compatible to Jenkins Pipeline plugin
-- [pull request #3](https://github.com/jenkinsci/r-plugin/pull/3): Revert "Make
-plugin compatible to Jenkins Pipeline plugin"
-- [pull request #4](https://github.com/jenkinsci/r-plugin/pull/4):
-Add Jenkins Pipeline compatibility
-
-### Release 0.3 (Jul, 27, 2016)
-
-- [pull request #2](https://github.com/jenkinsci/r-plugin/pull/2):
-Use codemirror styles for textarea input (i.e. syntax highlighting).
-(thanks to @kadrach)
-
-### Release 0.2 (Jul, 22, 2012)
-
-- Fixing plug-in name in pom.xml and creating Wiki page.
-
-### Release 0.1 (Jul, 10, 2012)
-
-- Initial release.
-
 ## Roadmap
 
 - Use Jenkins built-in editor with syntax highlighting (check if it
